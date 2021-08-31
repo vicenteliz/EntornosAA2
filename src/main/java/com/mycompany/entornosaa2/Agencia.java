@@ -48,7 +48,7 @@ public class Agencia {
                     registarParcela();
                     break;
                 case "4":
-                    verVehiculo();  
+                    //verVehiculo();  
                     break;
                 case "6":
                     //verParqueConCadena();
@@ -146,17 +146,5 @@ public class Agencia {
     
     
 
-    public void verVehiculo() {
-        
-        int idVehiculo = 0;
-        
-        System.out.println("Ingrese Id Vehiculo: ");
-        idVehiculo = teclado.nextInt() - 1;
-        teclado.nextLine();
-
-        //System.out.println("Ingrese Id Vehiculo: ");
-        //idVehiculo = teclado.nextInt();
-        
-        System.out.println(vehiculos.get(idVehiculo));                
-    }
+    
 }
