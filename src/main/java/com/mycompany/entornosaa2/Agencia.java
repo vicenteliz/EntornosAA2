@@ -51,13 +51,13 @@ public class Agencia {
                     registarParcela();
                     break;
                 case "4":
-                    //verVehiculo();  
+                    verVehiculo();  
                     break;
                 case "5":
-                    //verPiso();
+                    verPiso();
                     break;
                 case "6":
-                    //verParcela();
+                    verParcela();
                     break;
                 case "x":
                     salir = true;
@@ -145,7 +145,46 @@ public class Agencia {
 
     }
     
-    
+    public void verVehiculo() {
         
+        int idVehiculo = 0;
+        
+        System.out.println("Ingrese Id Vehiculo: ");
+        idVehiculo = teclado.nextInt() - 1;
+        teclado.nextLine();
+
+        //System.out.println("Ingrese Id Vehiculo: ");
+        //idVehiculo = teclado.nextInt();
+        
+        System.out.println(vehiculos.get(idVehiculo));                
+    }
+    
+     public void verPiso() {
+        
+        int idPiso = 0;
+        
+        System.out.println("Ingrese Id Piso: ");
+        idPiso = teclado.nextInt() - 1;
+        teclado.nextLine();
+
+        //System.out.println("Ingrese Id Vehiculo: ");
+        //idVehiculo = teclado.nextInt();
+        
+        System.out.println(pisos.get(idPiso));                
+    }
+     
+      public void verParcela() {
+        
+        int idParcela = 0;
+        
+        System.out.println("Ingrese Id Parcela: ");
+        idParcela = teclado.nextInt() - 1;
+        teclado.nextLine();
+
+        //System.out.println("Ingrese Id Vehiculo: ");
+        //idVehiculo = teclado.nextInt();
+        
+        System.out.println(parcelas.get(idParcela));                
+    }
 
 }
