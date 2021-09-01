@@ -1,5 +1,7 @@
 package com.mycompany.entornosaa2;
 
+import com.mycompany.entornosaa2.Domain.Parcela;
+import com.mycompany.entornosaa2.Domain.Piso;
 import com.mycompany.entornosaa2.Domain.Vehiculo;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -13,7 +15,8 @@ public class Agencia {
     private boolean salir;
     private Scanner teclado;
     private ArrayList<Vehiculo> vehiculos = new ArrayList<>();
-    
+    private ArrayList<Piso> pisos = new ArrayList<>();
+    private ArrayList<Parcela> parcelas = new ArrayList<>();
 
     public Agencia() {
         salir = false;
@@ -50,17 +53,17 @@ public class Agencia {
                 case "4":
                     //verVehiculo();  
                     break;
-                case "6":
-                    //verParqueConCadena();
-                    break;
                 case "5":
-                    //verParqueConCadena();
-                    break;    
+                    //verPiso();
+                    break;
+                case "6":
+                    //verParcela();
+                    break;
                 case "x":
                     salir = true;
                     System.out.println("Ha salido de la aplicación");
                     break;
-                    
+
                 default:
                     System.out.println("Opción seleccionada no valida");
             }
@@ -91,8 +94,8 @@ public class Agencia {
         vehiculos.add(new Vehiculo(idVehiculo, color, matricula, caballos, longitud));
 
     }
-    
-     public void registarPiso() {
+
+    public void registarPiso() {
 
         int idPiso = 0;
         String ciudad = "";
@@ -113,11 +116,11 @@ public class Agencia {
         precioDia = Float.parseFloat(teclado.nextLine());
         //teclado.nextLine();
         //Creacion de un nuevo onjeto dentro del Array
-        vehiculos.add(new Vehiculo(idPiso, ciudad, direccion, fechaConstruccion, precioDia));
+        pisos.add(new Piso(idPiso, ciudad, direccion, fechaConstruccion, precioDia));
 
     }
-     
-      public void registarParcela() {
+
+    public void registarParcela() {
 
         int idParcela = 0;
         String ciudad = "";
@@ -138,13 +141,11 @@ public class Agencia {
         longitud = Float.parseFloat(teclado.nextLine());
         //teclado.nextLine();
         //Creacion de un nuevo onjeto dentro del Array
-        vehiculos.add(new Vehiculo(idParcela, ciudad, camping, clase, longitud));
+        parcelas.add(new Parcela(idParcela, ciudad, camping, clase, longitud));
 
     }
     
     
-    
-    
+        
 
-    
 }
