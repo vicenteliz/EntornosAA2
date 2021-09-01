@@ -7,11 +7,11 @@ package com.mycompany.entornosaa2.Domain;
  */
 public class Vehiculo {
     
-    int idVehiculo;
-    String color;
-    String matricula;
-    int caballos;
-    float longitud;
+    private int idVehiculo;
+    private String color;
+    private String matricula;
+    private int caballos;
+    private float longitud;
 
     public Vehiculo(int modelo, String color, String matricula, int caballos, float longitud) {
         this.idVehiculo = modelo;
