@@ -24,6 +24,7 @@ public class Agencia {
 
     }
 
+    // Ejecutar en Application
     public void ejecutar() {
 
         do {
@@ -70,6 +71,7 @@ public class Agencia {
         } while (!salir);
     }
 
+    // Metodo de registro de vehiculo
     public void registarVehiculo() {
 
         int idVehiculo = 0;
@@ -77,7 +79,7 @@ public class Agencia {
         String matricula = "";
         int caballos = 0;
         float longitud = 0;
-
+        
         System.out.println("Ingrese Id Vehiculo: ");
         idVehiculo = Integer.parseInt(teclado.nextLine());
         //teclado.nextLine();
@@ -95,6 +97,7 @@ public class Agencia {
 
     }
 
+    // Metodo de registro de piso
     public void registarPiso() {
 
         int idPiso = 0;
@@ -120,6 +123,7 @@ public class Agencia {
 
     }
 
+    // Metodo de registro de parcela    
     public void registarParcela() {
 
         int idParcela = 0;
@@ -145,6 +149,7 @@ public class Agencia {
 
     }
     
+    // Metodo de visionado de vehiculo
     public void verVehiculo() {
         
         int idVehiculo = 0;
@@ -159,6 +164,7 @@ public class Agencia {
         System.out.println(vehiculos.get(idVehiculo));                
     }
     
+    // Metodo de visionado de piso
      public void verPiso() {
         
         int idPiso = 0;
@@ -173,6 +179,7 @@ public class Agencia {
         System.out.println(pisos.get(idPiso));                
     }
      
+     // Metodo de visionado de parcela
       public void verParcela() {
         
         int idParcela = 0;
