@@ -70,6 +70,7 @@ public class Agencia {
         } while (!salir);
     }
 
+    //registro del vehiculo
     public void registarVehiculo() {
 
         int idVehiculo = 0;
