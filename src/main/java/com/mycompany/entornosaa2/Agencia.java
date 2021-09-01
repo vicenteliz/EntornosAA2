@@ -71,7 +71,10 @@ public class Agencia {
         } while (!salir);
     }
 
-    // Metodo de registro de vehiculo
+
+
+    //registro del vehiculo
+
     public void registarVehiculo() {
 
         int idVehiculo = 0;
