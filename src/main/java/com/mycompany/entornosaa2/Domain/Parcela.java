@@ -4,11 +4,11 @@ package com.mycompany.entornosaa2.Domain;
 
 public class Parcela {
     
-    int idParcela;
-    String ciudad;
-    String camping;
-    int clase;
-    float longitud;
+    private int idParcela;
+    private String ciudad;
+    private String camping;
+    private int clase;
+    private float longitud;
 
     public Parcela(int idParcela, String ciudad, String camping, int clase, float longitud) {
         this.idParcela = idParcela;

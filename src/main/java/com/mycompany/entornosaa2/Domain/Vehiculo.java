@@ -1,4 +1,3 @@
-
 package com.mycompany.entornosaa2.Domain;
 
 /**
@@ -6,12 +5,12 @@ package com.mycompany.entornosaa2.Domain;
  * @author Vicente
  */
 public class Vehiculo {
-    
-    int idVehiculo;
-    String color;
-    String matricula;
-    int caballos;
-    float longitud;
+
+    private int idVehiculo;
+    private String color;
+    private String matricula;
+    private int caballos;
+    private float longitud;
 
     public Vehiculo(int modelo, String color, String matricula, int caballos, float longitud) {
         this.idVehiculo = modelo;
@@ -65,7 +64,5 @@ public class Vehiculo {
     public String toString() {
         return "Vehiculo{" + "idVehiculo=" + idVehiculo + ", color=" + color + ", matricula=" + matricula + ", caballos=" + caballos + ", longitud=" + longitud + '}';
     }
-    
-    
 
 }

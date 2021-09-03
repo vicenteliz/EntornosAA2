@@ -7,11 +7,11 @@ package com.mycompany.entornosaa2.Domain;
  */
 public class Piso {
     
-    int idPiso;
-    String ciudad;
-    String direccion;
-    int fechaConstruccion;
-    float precioDia;
+   private int idPiso;
+   private String ciudad;
+   private String direccion;
+   private int fechaConstruccion;
+   private float precioDia;
 
     public Piso(int idPiso, String ciudad, String direccion, int fechaConstruccion, float precioDia) {
         this.idPiso = idPiso;
